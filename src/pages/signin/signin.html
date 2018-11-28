@@ -1,0 +1,19 @@
+<ion-content>
+  <div class="rectangle_account pl_30 pr_30 box_s">
+    <p class="top_heading font_25 font_w_500 m-0 pt_40 pb_30">
+      Sign In
+    </p>
+    <ion-item class="mb_10 br_50 b_0">
+      <ion-label class="m-0"><ion-icon name="person"></ion-icon></ion-label>
+      <ion-input type="number" placeholder="Phone Number" [(ngModel)]="user.phone"></ion-input>
+    </ion-item>
+    <ion-item class="mb_10  br_50 b_0">
+      <ion-label class="m-0"><ion-icon name="lock"></ion-icon></ion-label>
+      <ion-input type="number" placeholder="PIN" [(ngModel)]="user.pin"></ion-input>
+    </ion-item>
+    <button ion-button full class="mb_10 br_50 b_0 box_s font_18" (click)="login()">Sign In</button>
+    <p class="text-right m-0 pb_10">Forgot Password</p>
+    <p class="m-0 pb_10 or">Or</p>
+    <p class="pb_40 m-0 text-center">Create an account</p>
+  </div>
+</ion-content>
